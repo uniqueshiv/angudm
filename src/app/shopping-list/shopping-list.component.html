@@ -1,0 +1,20 @@
+<!-- <input
+type="texct"
+class="form-control"
+(input)="onUpdateServerName($event)"> -->
+
+<input
+type="texct"
+class="form-control"
+[(ngModel)]="serverName"> 
+<!-- <p>{{serverCreatedStatus}}</p> -->
+
+<p [innerText]="allowclick"></p>
+<!-- <p>{{serverCreatedStatus}}</p> -->
+<button 
+class="btn btn-primary"
+ [disabled]="!allowclick"
+ (click)="serverCreated()">Add Server</button>
+
+ <p [ngStyle]="{'backgroundColor': getColor()}">Servr has created! the name is {{serverName}} and status {{getServerStatus()}}</p>
+ <p [ngStyle]="{'backgroundColor': getColor()}">Servr has created! the name is {{serverName}} and status {{getServerStatus()}}</p>
